@@ -112,6 +112,11 @@ h2 span{
     border: var(--light-text) 1px solid;
 }
 
+.dark-bg{
+    background-color: var(--prdark-color);
+    color: var(--bg-pink);
+}
+
 .review{
     background-color: #faf4ff7e;
     padding: 0;
@@ -146,8 +151,189 @@ h2 span{
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
 }
 
 .standard h3{
     font-size: 2.25rem;
 }
+
+.standard .grid{
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    gap: .75rem;
+}
+
+.standard .grid .grid-card{
+    background-color: #fff;
+    border-radius: 15px;
+    padding: 2rem;
+}
+
+.standard .grid .grid-card .icon{
+    background-color: var(--bg-pink);
+    padding: 1rem;
+    border-radius: 15px;
+    margin-bottom: 1.2rem;
+}
+
+.standard h4{
+    font-size: 1.25rem;
+    margin-bottom: 0.625rem;
+}
+
+.standard .grid .grid-card:first-child .icon{
+    background-color: #4e46e518;
+}
+
+.drops{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20vh;
+    padding-bottom: 20vh;
+}
+
+.drops h3{
+    font-size: 2.25rem;
+
+}
+
+.drops a{
+    display: none;
+}
+
+.drops span{
+    display: flex;
+    margin-bottom: 2rem;
+}
+
+.drops span:nth-child(2){
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.drops span p:nth-child(2){
+    color: var(--primary-color);
+    font-weight: 700;
+    margin-bottom: 2rem;
+}
+
+.drops span p:nth-child(2):hover{
+    cursor: pointer;
+}
+
+.drops .grid{
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+    gap: 1rem;
+}
+
+.drops .grid .grid-card img{
+    border-radius: 15px;
+    margin-bottom: 0.8rem;
+}
+
+.red-text{
+    color: var(--tertiary-color);
+    font-size: .8rem;
+    font-weight: 800;
+    margin-bottom: .5rem;
+}
+
+.grid-card .light-text{
+    font-size: .8rem;
+    font-weight: 300;
+    margin-bottom: .5rem;
+}
+
+.prod-name{
+    color: var(--prdark-color);
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin-bottom: .5rem;
+}
+
+.price{
+    color: var(--primary-color);
+    font-weight: 600;
+}
+
+.comment{
+    background-color: var(--bg-pink);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+}
+
+.comment h3{
+    font-size: 2rem;
+    margin-bottom: 3rem;
+}
+
+.comment .grid{
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    gap: 1.25rem;
+}
+
+.comment .grid article{
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 15px;
+}
+
+.comment .grid article .text{
+    font-weight: 400;
+    font-size: 1.25rem;
+    color: var(--prdark-color);
+    margin: 2rem 0;
+
+}
+
+.comment .profile{
+    border-radius: 50%;
+    width: 5rem;
+}
+
+.comment .name p:first-child{
+    font-weight: 700;
+}
+
+.inner-circle{
+    background-color: var(--bg-pink);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.inner-circle h3{
+    font-size: 3rem;
+    margin-bottom: 2rem;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    max-width: 70vh;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    gap: .5rem;
+}
+
+#inEmail{
+    border: none;
+    padding: 1rem;
+    border-radius: 25px;
+}
+
+.inner-circle p:last-child{
+    font-size: .75rem;
+    font-weight: 400;
+}
+
